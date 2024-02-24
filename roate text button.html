@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.rotate {
+-moz-transform: rotate(7.5deg);  /* FF3.5+ */
+ -o-transform: rotate(7.5deg);  /* Opera 10.5 */
+ -webkit-transform: rotate(7.5deg);  /* Saf3.1+, Chrome */
+ -webkit-transform-origin: 0 0 ;
+ filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);  /*IE6,IE7 */
+ -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";  /* IE8 */
+ }
+	</style>
+</head>
+<body>
+<input id="rotateBtn" type="submit" value="rotate"/>
+<div class="textToRotate">text to be rotated</div>
+<script type="text/javascript">
+	$('#rotateBtn').click(function() {
+     $('.textToRotate').addClass('rotate');
+ });
+</script>
+</body>
+</html>
